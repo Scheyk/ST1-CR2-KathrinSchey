@@ -7,13 +7,15 @@
     <title>Primary School Maths Page</title>
     <!-- css Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- icons bootstrap -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <!-- css own -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
         <!-- Brand -->
         <a class="navbar-brand" href="#">Schey</a>
 
@@ -40,13 +42,14 @@
     <!-- navbar end -->
 
     <!-- hero start -->
-    <div class="jumbotron">
-        <p>What this is?</p>
-        <p>
-            It's a Maths Multiplication table!
+    <div class="jumbotron font-weight-bolder">
+        <p class="h4 p-4">What this page do?</p>
+        <p class="h4 p-4">
+            It's brings a Maths Multiplication table!
         </p>
-        <p>
-            Put in a number between 1 and 10, click the button and see the magic!
+        <p class="h4 text-right pr-4">
+            Put in a number between 1 and 10,
+            <br> to get the Multiplication from 1 to 10!
         </p>
     </div>
     <!-- hero end -->
@@ -56,7 +59,7 @@
         <div class="container">
             <!-- main start -->
             <main class="text-center">
-                <h2>The input who multiply all from 1 to 10</h2>
+                <h2>Let's start!</h2>
                 <br>
                 <br>
                 <div>
@@ -64,8 +67,8 @@
                     <br>
                     <input type="button" id="button" value="magic" class="btn btn-success mt-4">
                 </div>
-                <div id="error" class="mt-4"></div>
-                <table class="table table-dark mt-4">
+                <div id="error" class="mt-4 h3 p-4 text-danger"></div>
+                <table class="table table-dark">
                     <tbody id="tBody">
                     </tbody>
                 </table>
@@ -78,7 +81,45 @@
 
 
     <!-- footer start -->
-    <footer>
+    <footer class="text-center bg-dark mt-4">
+
+        <!-- Grid row-->
+        <div class="row pt-4 m-0">
+
+            <!-- Grid column -->
+            <div class="col-md-12 p-3">
+                <div class="mb-5 flex-center">
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/CodeFactoryVienna/" target="_blank">
+                        <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/codefactoryvie" target="_blank">
+                        <i class="fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+                    <!--Linkedin -->
+                    <a href="https://www.linkedin.com/company/codefactory-vienna" target="_blank">
+                        <i class="fab fa-linkedin-in fa-lg mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+                    <!--Instagram-->
+                    <a href="https://www.instagram.com/codefactoryvienna/" target="_blank">
+                        <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+                    <!--YouTube-->
+                    <a href="https://www.youtube.com/channel/UCJE5xsfz-bLmVb5emobgOkw" target="_blank">
+                        <i class="fab fa-youtube fa-lg mr-md-5 mr-3 fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+        <!-- Copyright -->
+        <h4 class="text-center p-4 m-0 text-white">&copy; 2020 Copyright: Kathrin Schey & CodeFactory</h4>
+        <!-- Copyright -->
 
     </footer>
     <!-- footer end -->
@@ -87,6 +128,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- lodasch libarary -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
     <!-- script own -->
     <script type="text/javascript" src="script2.js"></script>
 </body>
