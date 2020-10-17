@@ -22,9 +22,9 @@ function multiply() {
         try {
 
             if (inputFiel === "") throw "you must enter a number...";
-            if (isNaN(inputFiel)) throw "only numbers...";
+            if (isNaN(inputFiel)) throw "only numbers...tztztz...";
             if ((inputFiel % 1) !== 0) throw "choose a full number. Not a decimal :D";
-            if (inputFiel == 0) throw "Every number multiplied by 0 is 0. You don’t need a table for that";
+            if (inputFiel == 0) throw "Every number multiplied by 0 is 0. You don’t need a table for that.SHAME!";
             if (inputFiel > 10) throw "You should enter a number smaller than 10";
             if (inputFiel < 0) throw "a number between 1 and 10.NOT smaler ;)";
 
